@@ -1,6 +1,6 @@
 # Pipeline for Curating TSRBench
 
-The Scenario-Based Datasets of TSRBench includes three reasoning tasks: Anomaly Detection, Scenario Attribution, and Inferential Calculation.
+The **Scenario-Based** Datasets of TSRBench includes three reasoning tasks: **Anomaly Detection**, **Scenario Attribution**, and **Inferential Calculation**.
 
 The dataset is curated based on the [ChatTS Training Dataset](https://huggingface.co/datasets/ChatTSRepo/ChatTS-Training-Dataset/tree/main)
 
@@ -24,7 +24,7 @@ Ground-truth labels are extracted using regular-expression–based pattern match
 
 DeepSeek-R1 is used to generate structured multi-step reasoning traces. All tasks follow a unified 6-step reasoning template:
 
-**Task Intent Identification**  -> **Candidate Attributes Selection**  -> **Critical Segments Analysis**  -> **Preliminary Answer Formulation** -> **Backtracking and Self-Reflection** -> **Reasoning Process Summarization**
+**Task Intent Identification -> Candidate Attributes Selection -> Critical Segments Analysis  -> Preliminary Answer Formulation -> Backtracking and Self-Reflection -> Reasoning Process Summarization**
 
 
 🔧 **Script**: `cot_deepseekr1.py` (contains reasoning templates for all three tasks)
