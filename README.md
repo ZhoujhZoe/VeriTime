@@ -61,3 +61,17 @@ After the two-stage RFT training, evaluate the final model on the test set using
 ```bash
 python evaluate.py
 ```
+
+#### RFT data selection
+
+In our RFT data selection process, we categorize sample difficulty based on  task taxonomy defined. A warm-up model is then used to distinguish between **normally learnable samples** and **promising challenging samples**.
+
+We additionally provide several baseline selection strategies in the directory.
+
+```bash
+python ifd_select.py # Instruction-Following Difficulty
+python ppl_select.py # Perplexity
+python length_select.py # Token Length
+```
+
+
