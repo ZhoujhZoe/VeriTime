@@ -22,3 +22,42 @@ TSRBench consists of two major categories of reasoning tasks: **Scenario-based**
 
 We have open-sourced the complete TSRBench dataset on Hugging Face.
 
+## Experiments
+
+#### Environment Setup
+Our environment is based on **Python 3.12**.
+
+To install all dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+#### Model Download
+
+We use Qwen2.5-3B-Instruct and Qwen3-4B-Instruct as the base models.
+The models can be downloaded from the [official Qwen Hugging Face collection](https://huggingface.co/Qwen/collections).
+
+### VeriTime
+#### Supervised Fine-Tuning (SFT)
+In the first stage, we fine-tune the model to improve stability and strengthen general reasoning capability:
+
+```bash
+python VeriTime_sft.py
+```
+#### Reinforcement Learning (GRPO)
+To further enhance step-by-step reasoning, we perform reinforcement learning using the GRPO algorithm.
+
+This stage leverages our fine-grained, multi-objective reward functions designed to evaluate intermediate reasoning steps:
+
+```bash
+python VeriTime_grpo.py
+```
+
+#### Evaluation
+
+After the two-stage RFT training, evaluate the final model on the test set using:
+
+```bash
+python evaluate.py
+```
