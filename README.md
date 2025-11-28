@@ -2,6 +2,8 @@
 
 ## TSRBench
 
+We open-source the TSRBench dataset on **Dataset** folder.
+
 The **TSRBench** folder contains the curation pipeline for our dataset.
 TSRBench consists of two major categories of reasoning tasks: **Scenario-based** and **Knowledge-based**, with 7 subsets in total.
 
@@ -20,7 +22,6 @@ TSRBench consists of two major categories of reasoning tasks: **Scenario-based**
 | | EMG (Electromyogram Signal Diagnosis) |
 | | RCW (Right Whale Calls Detection) |
 
-We have open-sourced the complete TSRBench dataset on Hugging Face.
 
 ## Experiments
 
@@ -74,4 +75,4 @@ python ppl_select.py # Perplexity
 python length_select.py # Token Length
 ```
 
-
+ 
