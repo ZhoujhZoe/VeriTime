@@ -75,4 +75,6 @@ python ppl_select.py # Perplexity
 python length_select.py # Token Length
 ```
 
- 
+ #### Result
+
+We release the test results of Qwen models trained under VeriTime in the **LLM_output** folder.
