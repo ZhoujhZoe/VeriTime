@@ -2,6 +2,10 @@
 
 ## TSRBench
 
+<p align="center">
+    <img src="./Figure_TSRgen.pdf" width="800"/>
+<p>
+
 We open-source the TSRBench dataset on **Dataset** folder.
 
 The **TSRBench** folder contains the curation pipeline for our dataset.
@@ -40,6 +44,11 @@ We use Qwen2.5-3B-Instruct and Qwen3-4B-Instruct as the base models.
 The models can be downloaded from the [official Qwen Hugging Face collection](https://huggingface.co/Qwen/collections).
 
 ### VeriTime
+
+<p align="center">
+    <img src="./Figure_RFT.pdf" width="800"/>
+<p>
+
 #### Supervised Fine-Tuning (SFT)
 In the first stage, we fine-tune the model to improve stability and strengthen general reasoning capability:
 
@@ -60,10 +69,10 @@ python VeriTime_grpo.py
 After the two-stage RFT training, evaluate the final model on the test set using:
 
 ```bash
-python evaluate.py
+python VeriTime_evaluate.py
 ```
 
-#### RFT data selection
+<!-- #### RFT data selection
 
 In our RFT data selection process, we categorize sample difficulty based on  task taxonomy defined. A warm-up model is then used to distinguish between **normally learnable samples** and **promising challenging samples**.
 
@@ -73,7 +82,7 @@ We additionally provide several baseline selection strategies in the directory.
 python ifd_select.py # Instruction-Following Difficulty
 python ppl_select.py # Perplexity
 python length_select.py # Token Length
-```
+``` -->
 
  #### Result
 
