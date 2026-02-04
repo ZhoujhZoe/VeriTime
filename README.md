@@ -3,7 +3,7 @@
 ## TSRBench
 
 <p align="center">
-    <img src="./Figure_TSRgen.pdf" width="800"/>
+    <img src="./Figure_TSRgen.png" width="800"/>
 <p>
 
 We open-source the TSRBench dataset on **Dataset** folder.
@@ -46,7 +46,7 @@ The models can be downloaded from the [official Qwen Hugging Face collection](ht
 ### VeriTime
 
 <p align="center">
-    <img src="./Figure_RFT.pdf" width="800"/>
+    <img src="./Figure_RFT.png" width="800"/>
 <p>
 
 #### Supervised Fine-Tuning (SFT)
