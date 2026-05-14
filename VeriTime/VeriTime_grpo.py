@@ -433,7 +433,7 @@ print("max_completion_length", max_completion_length) # e.g., 2000
 vllm_sampling_params = SamplingParams(
     min_p=0.1,
     top_p=1.0,
-    top_k=-1,
+    top_k=0,
     seed=training_config.seed,
     stop=[tokenizer.eos_token],
     include_stop_str_in_output=True,
