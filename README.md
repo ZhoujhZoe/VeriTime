@@ -22,7 +22,7 @@ TSRBench consists of two major categories of reasoning tasks: **Scenario-based**
 | Reasoning Type | Task |
 |----------------|------|
 | Inductive Reasoning | CTU (Computer Type Usage) |
-| | ECG (Electrocardiogram Record Diagnosis) |
+| |ECG (Electrocardiogram Record Diagnosis) |
 | | EMG (Electromyogram Signal Diagnosis) |
 | | RCW (Right Whale Calls Detection) |
 
@@ -42,6 +42,10 @@ pip install -r requirements.txt
 
 We use Qwen2.5-3B-Instruct and Qwen3-4B-Instruct as the base models.
 The models can be downloaded from the [official Qwen Hugging Face collection](https://huggingface.co/Qwen/collections).
+
+##### Released VeriTime Checkpoint
+
+We have released our VeriTime LoRA adapter, trained on the **Scenario-based** subset of TSRBench with **Qwen3-4B-Instruct** as the base model (SFT + GRPO with LoRA): **[HayleyZhou1113/VeriTime](https://huggingface.co/HayleyZhou1113/VeriTime)**
 
 ### VeriTime
 
